@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html class="supernova"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F211072680473452" title="oEmbed Form">
+<link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F211072680473452" title="oEmbed Form">
+<meta property="og:title" content="Feedback Form" >
+<meta property="og:url" content="https://form.jotform.com/211072680473452" >
+<meta property="og:description" content="Please click the link to complete this form." >
+<meta name="slack-app-id" content="AHNMASS8M">
+<link rel="shortcut icon" href="https://cdn.jotfor.ms/favicon.ico">
+<link rel="canonical" href="https://form.jotform.com/211072680473452" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+<meta name="HandheldFriendly" content="true" />
+<title>BERT and translate Form</title>
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.24739" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f30e2a790832f3e96009402"/>
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.24739" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.24739" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.24739" type="text/javascript"></script>
+<script type="text/javascript">
+	JotForm.init(function(){
+if (window.JotForm && JotForm.accessible) $('input_4').setAttribute('tabindex',0);
+      setTimeout(function() {
+          $('input_6').hint('ex: myname@example.com');
+       }, 20);
+	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+	JotForm.clearFieldOnHide="disable";
+    /*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"clickTo","qid":"1","text":"Feedback Form","type":"control_head"},{"name":"submitForm","qid":"2","text":"Submit Feedback","type":"control_button"},{"name":"feedbackType","qid":"3","text":"Feedback Type","type":"control_radio"},{"name":"describeYour","qid":"4","text":"Describe Your Feedback:","type":"control_textarea"},null,{"name":"email6","qid":"6","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,{"name":"name","qid":"8","text":"Name","type":"control_fullname"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Feedback Form","type":"control_head"},{"name":"submitForm","qid":"2","text":"Submit Feedback","type":"control_button"},{"name":"feedbackType","qid":"3","text":"Feedback Type","type":"control_radio"},{"name":"describeYour","qid":"4","text":"Describe Your Feedback:","type":"control_textarea"},null,{"name":"email6","qid":"6","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,{"name":"name","qid":"8","text":"Name","type":"control_fullname"}]);}, 20); 
+</script>
+</head>
+<body>
+<form class="jotform-form" method="post" name="form_211072680473452" id="211072680473452" accept-charset="utf-8" autocomplete="on">
+  {%csrf_token%}
+  <input type="hidden" name="formID" value="211072680473452" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">
+              Intelligent Learning Assistant using BERT and LSTM.
+            </h1>
+           
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line jf-required" data-type="control_textarea" id="id_4">
+        <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4">
+          Paragraph:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_4" class="form-input-wide jf-required" data-layout="full">
+          <textarea id="input_4" class="form-textarea validate[required]" name="paragraph" style="width:648px;height:163px" data-component="textarea" required="" aria-labelledby="label_4">{{para}}</textarea>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_8">
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          Question 1:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_8" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              {%if question1%}
+              <input type="text" id="first_8" name="question1" class="form-textbox validate[required]" size="10" value="{{question1}}" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
+              {%else%}
+              <input type="text" id="first_8" name="question1" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
+              {%endif%}
+            </span>
+            
+          </div>
+        </div>
+      </li>
+      {%if ans1%}
+      <li class="form-line jf-required" data-type="control_fullname" id="id_8">
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          Answer:
+        </label>
+        <div id="cid_8" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <label class="form-label form-label-top form-label-auto" for="first_8" id="sublabel_8_first" style="min-height:13px" aria-hidden="false"> {{ans1}} </label>
+            </span>
+          </div>
+        </div>
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          translation: '{{ans1t}}'
+        </label>
+      </li>
+      {%endif%}
+      <li class="form-line jf-required" data-type="control_fullname" id="id_8">
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          Question 2:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_8" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              {%if question2%}
+              <input type="text" id="first_8" name="question2" class="form-textbox validate[required]" size="10" value="{{question2}}" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
+              {%else%}
+              <input type="text" id="first_8" name="question2" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
+              {%endif%}
+            </span>
+            
+          </div>
+        </div>
+      </li>
+      {%if ans2%}
+      <li class="form-line jf-required" data-type="control_fullname" id="id_8">
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          Answer:
+        </label>
+        <div id="cid_8" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <label class="form-label form-label-top form-label-auto" for="first_8" id="sublabel_8_first" style="min-height:13px" aria-hidden="false"> {{ans2}} </label>
+            </span>
+          </div>
+        </div>
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          translation: '{{ans2t}}'
+        </label>
+      </li>
+      {%endif%}
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+            <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Submit
+            </button>
+            {%if ans1%}
+            <input type="button" onclick="location.href='http://localhost:8000/';" value="Reset" class="form-submit-button submit-button jf-form-buttons jsTest-submitField"/>
+            {%endif%}
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by JotForm";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="211072680473452" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='211072680473452'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "211072680473452-211072680473452";
+}
+  </script>
+  <div class="formFooter-heightMask">
+  </div>
+  
+</form></body>
+</html>
+<script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.24739"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.24739"></script>
