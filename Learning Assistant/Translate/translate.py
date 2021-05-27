@@ -11,9 +11,11 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from string import digits
 import nltk
+from nltk.stem import WordNetLemmatizer
 import re
 import string
 import os
+from .utils import Stemming
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
@@ -47,28 +49,16 @@ lines['hindi']=lines['hindi'].apply(lambda x: ''.join(ch for ch in x if ch not i
 
 lines.head()
 
-remove_digits = str.maketrans('', '', digits)
-
-remove_digits
-
-a = lines['english'][0].translate(remove_digits)
-
-a
-
-a.strip()
-
-# Remove all numbers from text
-remove_digits = str.maketrans('', '', digits)
-lines['english']=lines['english'].apply(lambda x: x.translate(remove_digits))
-lines['hindi']=lines['hindi'].apply(lambda x: x.translate(remove_digits))
-
-lines['hindi'] = lines['hindi'].apply(lambda x: re.sub("[२३०८१५७९४६]", "", x))
-
 # Remove extra spaces
 lines['english']=lines['english'].apply(lambda x: x.strip())
 lines['hindi']=lines['hindi'].apply(lambda x: x.strip())
 lines['english']=lines['english'].apply(lambda x: re.sub(" +", " ", x))
 lines['hindi']=lines['hindi'].apply(lambda x: re.sub(" +", " ", x))
+
+# Stemming and lemmatization
+Stemmer = Stemming()
+lines('english') = lines['english'].apply(lambda x: ' '.join(Stemmer.stem(Wd) for Wd in x.split()))
+lines('english') = lines['english'].apply(lambda x: ' '.join(WordNetLemmatizer(Wd) for Wd in x.split()))
 
 'hello! how are you buddy?'.strip()
 
