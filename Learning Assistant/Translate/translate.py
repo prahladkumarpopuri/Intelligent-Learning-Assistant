@@ -23,7 +23,7 @@ pd.set_option('display.width', 1000)
 pd.set_option('display.max_colwidth', -1)
 
 lines = pd.read_csv('bert_translate/BERTSQuADmaster/hindi_english_parallel.csv')
-lines = lines[:10000]
+lines = lines[:100000]
 lines.head()
 
 
